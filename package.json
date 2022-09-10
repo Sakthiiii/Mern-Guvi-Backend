@@ -32,5 +32,6 @@
   "devDependencies": {
     "@types/jsonwebtoken": "^8.5.8"
   },
+  
   "proxy":"http://mern-auth-serverside.herokuapp.com/"
 }
