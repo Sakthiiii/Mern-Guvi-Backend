@@ -5,10 +5,7 @@ const contactSchema = new mongoose.Schema({
         type: String,
         required:true,
     },
-    lastname:{
-        type: String,
-        required:true,
-    },
+  
     email:{
         type: String,
         required:true,
@@ -16,6 +13,15 @@ const contactSchema = new mongoose.Schema({
     company:{
         type: String,
         required:true,
+    },
+    age:{
+        type: Number,
+        required:true,
+    },
+    dob:{
+        type: Date,
+        required:true,
+      
     },
     phone :{
         type: Number,
