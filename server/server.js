@@ -94,7 +94,7 @@ app.route("/contact/:contactId").delete((req,res)=>{
 
 
 app.get("/",(req,res)=>{
-     res.send("server running on the PAGE")
+     res.send("server running on the PAGE MERN Authentication")
  })
 
 

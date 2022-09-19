@@ -27,10 +27,8 @@
     "mongoose": "^6.2.7",
     "nodemon": "^2.0.15",
     "Router": "^2.1.0",
-    "serve-favicon": "^2.5.0"
-  },
-  "devDependencies": {
-    "@types/jsonwebtoken": "^8.5.8"
+    "serve-favicon": "^2.5.0",
+     "@types/jsonwebtoken": "^8.5.8"
   },
   
   "proxy":"http://mern-auth-serverside.herokuapp.com/"
