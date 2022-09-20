@@ -1,16 +1,16 @@
 const express= require("express");
 const dotenv=require("dotenv");
-const PORT = process.env.PORT || 5000 ;
+
 const connectDB=require ("./config/db.js");
 
-const favicon =require("serve-favicon");
+// const favicon =require("serve-favicon");
 const path=require("path");
 const cors= require("cors");
 const bodyparser =require("body-parser");
  const Contact = require("./models/contactModel");
+ const mongoose= require("mongoose");
 
-
-dotenv.config();
+require ('dotenv').config();
 const app=express();
 
 //parse application/x-www-form-urlencoded
@@ -19,7 +19,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cors());
 
-app.use(favicon(path.join(__dirname,"public","favicon.ico")))
+// app.use(favicon(path.join(__dirname,"public","favicon.ico")))
 app.use(bodyparser.urlencoded({extended:true})); 
 app.use(bodyparser.json());   
  connectDB();
@@ -97,7 +97,7 @@ app.get("/",(req,res)=>{
      res.send("server running on the PAGE MERN Authentication")
  })
 
-
+ const PORT = process.env.PORT || 5000 ;
 //Error Handling
 app.use((err,req,res,nexe)=>{
     console.error(err.stack);

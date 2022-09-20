@@ -1,12 +1,13 @@
 {
-  "engines": {
-    "node": "16.9.0",
-    "npm": "8.5.0"
-  },
+ 
   "name": "mern-auth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+   "engines": {
+    "node": "16.9.0",
+    "npm": "8.5.0"
+  },
   "scripts": {
     "start": "nodemon server/server",
     "client": "npm start --prefix client",
