@@ -36,7 +36,7 @@ router.post(
       //See if user exists
       let user = await User.findOne({ email });
       if (user) {
-        res.status(400).json({ errors: [{ msg: "User already Exists" }] });
+        res.status(400).json({ errors: [{ msg: "User already Exists...." }] });
       }
       user = new User({
         name,
@@ -63,7 +63,7 @@ router.post(
       });
     } catch (error) {
       console.error(error.message);
-      res.status(404).send("Internal Server Error");
+      res.status(404).send("Internal Server Error...");
     }
   }
 );
@@ -124,7 +124,7 @@ router.post(
       });
     } catch (error) {
       console.error(error.message);
-      res.status(500).send("Internal Server Error");
+      res.status(500).send("Internal Server Error Post");
     }
   }
 );
